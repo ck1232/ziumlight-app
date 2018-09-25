@@ -1,0 +1,32 @@
+<li class="product" [style.width.px]="width">
+	<div>
+		<div>
+			<a href="/products/{{product.productName}}">
+				<img alt="{{product.productName}}" src="{{product.imageUrl}}">
+			</a>
+		</div>
+		<div>
+			<a href="/products/{{product.productName}}">
+				<h5 class="product_title">{{product.productName}}</h5>
+			</a>
+			<div class="product_amount_wrap">
+				<span class="product_price">
+					<del *ngIf="product.discount">${{product.usualPrice}}</del>
+					
+					<span class="product_amount" *ngIf="product.discount">
+						${{product.discountPrice}}
+					</span>
+					
+					<span class="product_amount" *ngIf="!product.discount">
+						${{product.usualPrice}}
+					</span>
+				</span>
+			</div>
+			<div class="colours_wrap">
+				<ul class="colours">
+					<li class="colour" *ngFor="let colour of product.colourList"><img alt="{{colour.colourName}}" src="{{colour.imageIconUrl}}"/></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</li>

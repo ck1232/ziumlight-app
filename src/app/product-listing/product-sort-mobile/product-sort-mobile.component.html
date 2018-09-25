@@ -1,0 +1,9 @@
+<div class="col-xs-6 col-sm-6">
+  <mat-form-field class="pull-right">
+    <mat-select placeholder="Sort by:" [formControl]="sortByControl" [style.width]="'100%'">
+      <mat-option *ngFor="let sort of sortElements()" [value]="sort">
+          {{sort}}
+        </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

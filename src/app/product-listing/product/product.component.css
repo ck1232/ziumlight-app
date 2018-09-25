@@ -1,0 +1,34 @@
+li.product{
+	float: left;
+	margin: 7px 5px	;
+	padding: 0 5px;
+	text-align: center;
+}
+
+h5.product_title{
+	margin: 0px;
+}
+div.product_amount_wrap{
+	text-align: center;
+}
+div.colours_wrap{
+	text-align: left;	
+	float: right;
+	position: relative;
+	left: -50%;
+}
+
+ul.colours{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	left: 50%;
+}
+
+li.colour{
+	float: left;
+	margin: 0px;
+	padding: 0 1px;
+	position: relative;
+}

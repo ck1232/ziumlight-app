@@ -1,0 +1,31 @@
+.filter-wrap{
+	margin: 15px 25px;	
+	text-align: right;
+}
+.filter-desktop{
+	display: inline-block;
+}
+
+div.filter_name{
+	display: inline-block;
+}
+div.sort-option-wrap{
+	display: inline-block;
+}
+ul.sort-options{
+	display: inline-block;
+	width: auto;
+	list-style-type: none;
+	margin: 0px;
+	vertical-align: middle;
+}
+
+ul.sort-options li{
+	float: left;
+	margin: 0px 5px;
+}
+
+ul.sort-options li.active{
+	color: #745cf9;
+	font-weight: 600;
+}

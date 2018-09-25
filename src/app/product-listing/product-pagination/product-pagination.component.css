@@ -1,0 +1,8 @@
+div.pagination-wrap{
+	text-align: center;
+	margin: 20px 0px;
+}
+
+ul.pagination{
+	vertical-align: bottom;
+}

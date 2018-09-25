@@ -1,0 +1,10 @@
+<div class="filter-wrap">
+	<div class="filter-desktop hidden-sm hidden-xs">
+		<div class="filter_name">Sort By: </div>
+		<div class="sort-option-wrap">
+			<ul class="sort-options" *ngFor="let item of sortElements()">
+				<li><a (click)="onSortSelected(item)">{{item}}</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

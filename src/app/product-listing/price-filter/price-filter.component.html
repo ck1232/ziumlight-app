@@ -1,0 +1,23 @@
+<div class="price-filter-wrap">
+	<div class="price-header-wrap">
+		<div class="filter-title-box">
+			<h5 class="filter-title-name">Price($)</h5>
+		</div>
+	</div>
+	
+	<div class="price-body-wrap">
+		<form [formGroup]="form">
+		    <nouislider [config]="priceRangeConfig" [connect]="true" [min]="0" [max]="10" [formControl]="form.controls.range"></nouislider>
+		</form>
+		<div class="price-display-label-wrap">
+			<div class="price-label-wrap pull-left">
+				<div class="currency">$</div>
+				<div class="price-label">{{form.value.range[0]}}</div>
+			</div>
+			<div class="price-label-wrap pull-right">
+				<div class="currency">$</div>
+				<div class="price-label">{{form.value.range[1]}}</div>
+			</div>
+		</div>
+	</div>
+</div>

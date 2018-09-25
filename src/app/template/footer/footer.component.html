@@ -1,0 +1,29 @@
+<footer id="colophon" class="site-footer footer bg-dark" role="contentinfo">
+	<div class="container footer-inner">
+		<div class="row">
+			
+		</div>
+
+		<div class="row">
+			<div class="site-info col-sm-6">
+				<div class="copyright-text">
+					
+				</div>
+				<div class="footer-credits">
+					Powered By <a>Angular</a>
+				</div>
+			</div><!-- .site-info -->
+			<div class="col-sm-6 text-right">
+				<nav id="social" class="social-icons">
+					<ul class="list-inline social-list">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom" *ngFor="let socialIcon of socialList">
+							<a href="{{socialIcon.url}}"><i class="{{socialIcon.icon}}"></i></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<a class="btn btn-sm fade-half back-to-top inner-link" href="#top"><i class="fa fa-angle-up"></i></a>
+</footer><!-- #colophon -->

@@ -1,0 +1,16 @@
+<div class="shipping-filter-wrap">
+	<div class="shipping-header-wrap">
+		<div class="filter-title-box">
+			<h5 class="filter-title-name">Ships in (days): {{form.value.single}}</h5>
+		</div>
+		<!-- <div class="filter-clear-box">
+			Clear
+		</div> -->
+	</div>
+	
+	<div class="shipping-body-wrap">
+		<form [formGroup]="form">
+		    <nouislider [config]="shippingRangeConfig" [connect]="true" [formControl]="form.controls.single"></nouislider>
+		</form>
+	</div>
+</div>

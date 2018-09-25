@@ -1,0 +1,37 @@
+div.price-filter-wrap{
+	padding: 15px;
+	border-color: gray;
+	border-width: 1px;
+	border-radius: 4px;
+	min-height: 120px;
+	border-style: solid;
+	margin: 15px 0px;
+}
+
+div.filter-title-box{
+	display: inline-block;
+}
+
+h5.filter-title-name{
+	font-weight: 700;	
+	margin: 0px;
+}
+div.price-body-wrap{
+	padding: 5px 15px;
+}
+
+div.price-display-label-wrap{
+	margin: 5px 0px;
+}
+
+div.price-label-wrap{
+	display: inline-block;
+}
+
+div.currency{
+	display: inline-block;
+}
+
+div.price-label{
+	display: inline-block;
+}

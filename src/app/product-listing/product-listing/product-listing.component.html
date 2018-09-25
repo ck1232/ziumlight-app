@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <app-breadcrumb></app-breadcrumb>
+    <div class="row">
+      <div class="header_title_wrap">
+        <div class="header_title_name">
+          <h1>Area Rugs & Outdoor Rugs</h1>
+        </div>
+        <div class="header_title_description">
+          Just like what the rug said to the floor, here at HipVan, we've got you covered too! Feel at ease and at home with our wide selection of rugs &amp; mats. Find your favourite picks from our extensive range of patterns and designs. 
+        </div>
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid">
+        <div class="col-xs-12">
+      <app-product-filter></app-product-filter>
+      <div class="col-md-9 sidebar-left">
+        <app-product-sort></app-product-sort>
+        <div class="row hidden-md hidden-lg">
+          <app-product-filter-mobile></app-product-filter-mobile>
+          <app-product-sort-mobile></app-product-sort-mobile>
+        </div>
+        <div #productListingBox class="row">
+          
+          <ul class="products">
+            <app-product [product]="product" *ngFor="let product of productList" [width]="productWidthSize"></app-product>
+          </ul>
+          
+        </div>
+        <app-product-pagination></app-product-pagination>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>

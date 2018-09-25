@@ -1,0 +1,7 @@
+<span>
+    <a href="{{breadcrumb.url}}">{{breadcrumb.text | capitalize}}</a>
+    <span *ngIf="breadcrumb.next">
+      >
+      <app-breadcrumb-node [breadcrumb]="breadcrumb.next"></app-breadcrumb-node>				
+    </span>
+  </span>
