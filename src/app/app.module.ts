@@ -8,10 +8,12 @@ import { TemplateModule } from './template/template.module';
 import { TemplateComponent } from './template/template/template.component';
 import { ProductListingComponent } from './product-listing/product-listing/product-listing.component';
 import { IndexModule } from './index/index.module';
+import { ProductViewModule } from './product-view/product-view.module';
 import { IndexComponent } from './index/index/index.component';
+import { ProductViewComponent } from './product-view/product-view/product-view.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/listing', pathMatch: 'full' },
   {
       path: 'home',
       component: TemplateComponent,
@@ -31,6 +33,16 @@ const appRoutes: Routes = [
           outlet: 'content'
       }
     ]
+  },
+  {
+    path: 'product',
+    component: TemplateComponent,
+    children: [
+      {path: '',
+          component: ProductViewComponent,
+          outlet: 'content'
+      }
+    ]
   }
 ];
 @NgModule({
@@ -43,6 +55,7 @@ const appRoutes: Routes = [
     TemplateModule,
     ProductListingModule,
     IndexModule,
+    ProductViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

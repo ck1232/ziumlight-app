@@ -8,11 +8,18 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { BreadcrumbNodeComponent } from './breadcrumb-node/breadcrumb-node.component';
 import { CapitalizePipe } from '../pipe/capitalize.pipe';
+import { SearchComponent } from './search/search.component';
+import { MatInputModule, MatAutocompleteModule } from '@angular/material';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
+    FormsModule,
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatInputModule,
+    MatAutocompleteModule,
+    ReactiveFormsModule
   ],
   declarations: [
     TemplateComponent,
@@ -21,7 +28,8 @@ import { CapitalizePipe } from '../pipe/capitalize.pipe';
     NavMenuComponent,
     BreadcrumbComponent,
     BreadcrumbNodeComponent,
-    CapitalizePipe],
+    CapitalizePipe,
+    SearchComponent],
   exports: [
     TemplateComponent,
     HeaderComponent,
