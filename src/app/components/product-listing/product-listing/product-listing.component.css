@@ -12,6 +12,7 @@ div.header_title_wrap{
 	background-image: url('http://via.placeholder.com/1800x180');
 	background-position: center;
 	min-height: 180px;
+	width: 100%;
 }
 
 div.header_title_description{

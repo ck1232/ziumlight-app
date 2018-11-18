@@ -4,8 +4,8 @@ import { ViewChild } from '@angular/core';
 import { fromEvent } from 'rxjs/internal/observable/fromEvent';
 import { Subscription } from 'rxjs/internal/Subscription';
 import { debounceTime } from 'rxjs/operators';
-import { SortElement } from '../../enum/sort-element.enum';
 import { ProductListingStoreService } from '../service/product-listing-store.service';
+import { SortElement } from 'src/app/enum/sort-element.enum';
 
 @Component({
   selector: 'app-product-listing',

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductListingComponent } from './product-listing/product-listing.component';
-import { TemplateModule } from '../template/template.module';
 import { ProductFilterComponent } from './product-filter/product-filter.component';
 import { ProductSortComponent } from './product-sort/product-sort.component';
 import { ProductFilterMobileComponent } from './product-filter-mobile/product-filter-mobile.component';
@@ -54,6 +53,7 @@ import {
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { TemplateModule } from 'src/app/template/template.module';
 
 @NgModule({
   imports: [

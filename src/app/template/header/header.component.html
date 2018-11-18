@@ -2,21 +2,21 @@
   <div class="nav-container">
     <nav id="site-navigation" class="main-navigation" role="navigation">
       <div class="container-fluid nav-bar" [ngClass]="[navOpen ? 'nav-open':'']">
-        <div class="row">
-          <div class="module left site-title-container">
+        <div class="row d-flex">
+          <div class="module left site-title-container p-2">
             <a href="/home" class="custom-logo-link"><span class="site-title">Ziumlight</span></a>
           </div>
-          <div class="module widget-handle mobile-toggle right visible-sm visible-xs" (click)="mobileToggle()"
+          <div class="module widget-handle mobile-toggle right visible-sm visible-xs ml-auto p-2" (click)="mobileToggle()"
             [ngClass]="navOpen ? 'active':''">
             <i class="fa fa-bars"></i>
           </div>
-          <div class="module-group left">
+          <div class="module-group left p-2">
             <div class="module left">
               <app-nav-menu></app-nav-menu>
             </div>
             <!--end of menu module-->
           </div>
-          <div class="module-group right hidden-sm hidden-xs">
+          <div class="module-group float-right hidden-sm hidden-xs ml-auto p-2">
             <div class="module widget-handle search-widget-handle left"
             [ngClass]="navOpen ? 'hidden-xs hidden-sm':''">
               <div class="search">

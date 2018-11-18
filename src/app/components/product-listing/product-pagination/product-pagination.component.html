@@ -1,5 +1,5 @@
-<div class="row pagination-wrap">
-	<ul class="pagination">
+<div class="row pagination-wrap d-flex flex-row justify-content-center my-flex-container">
+	<ul class="pagination p-2">
 		<li><a href="#"><</a></li>
 		<li *ngFor="let pageNum of numOfPages" [ngClass]="{'active': currentPageNum === pageNum}"><a (click)="onPageSelected(pageNum)">{{pageNum}}</a></li>
 		<li><a href="#">></a></li>

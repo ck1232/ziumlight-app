@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SortElement } from '../../enum/sort-element.enum';
 import { ProductListingStoreService } from '../service/product-listing-store.service';
+import { SortElement } from 'src/app/enum/sort-element.enum';
 
 @Component({
   selector: 'app-product-sort',

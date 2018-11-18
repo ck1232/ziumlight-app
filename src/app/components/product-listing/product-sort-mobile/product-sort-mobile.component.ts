@@ -6,7 +6,7 @@ import { EventEmitter } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Subscription } from 'rxjs/internal/Subscription';
 import { ProductListingStoreService } from '../service/product-listing-store.service';
-import { SortElement } from '../../enum/sort-element.enum';
+import { SortElement } from 'src/app/enum/sort-element.enum';
 
 @Component({
   selector: 'app-product-sort-mobile',
